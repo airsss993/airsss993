@@ -1,0 +1,365 @@
+@import url(fonts.css);
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    scroll-behavior: smooth;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    user-select: none;
+    background-color: #0e0e0e;
+    font-family: "Futura PT Book";
+    overflow-x: hidden;
+    /* animation: load 2.5s linear forwards; */
+}
+
+main {
+    flex: 1;
+}
+
+.hiddenmain {
+    opacity: 0;
+    transition: opacity 4s;
+}
+
+a {
+    text-decoration: none;
+}
+
+.hello {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    color: white;
+    opacity: 1;
+    visibility: visible;
+    transition: opacity 2s ease-in-out, visibility 2s;
+}
+
+.hello.hide {
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 2s ease-in-out, visibility 2s;
+}
+
+.hellotext {
+    font-size: 2rem;
+    margin: 0;
+}
+
+.hiddenmain {
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 2s ease-in-out, visibility 2s;
+}
+
+.hiddenmain.show {
+    opacity: 1;
+    visibility: visible;
+    transition: opacity 2s ease-in-out;
+}
+
+header.show {
+    opacity: 1;
+    transition: opacity 2s ease-in-out;
+}
+
+.background {
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+@import url("fonts.css");
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    user-select: none;
+}
+
+a:-webkit-any-link {
+    text-decoration: none;
+}
+
+body {
+    background-color: rgb(14, 14, 14);
+    font-family: "Futura PT Book", serif;
+    overflow-x: hidden;
+    animation: load 2.5s linear forwards;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    opacity: 0;
+}
+
+header nav {
+    border: #98989852 1px solid;
+    margin-top: 20px;
+    padding: 15px;
+    border-radius: 50px;
+    position: fixed;
+    backdrop-filter: blur(3px);
+    background-color: #4d4d4d6d;
+    z-index: 1000;
+}
+
+header a {
+    color: #fff;
+    font-size: 24px;
+    margin: 0 15px;
+    letter-spacing: 1.2px;
+    transition: 0.4s;
+    text-decoration: none;
+}
+
+header a:hover {
+    color: #cacaca;
+}
+
+header nav {
+    padding: 10px;
+}
+
+section {
+    width: 100%;
+    height: 100vh;
+}
+
+.section__1 {
+    background-image: url("img/render1_00000_00000.png");
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.contact {
+    background-image: url("img/backgroudnpage1_00000.png") !important;
+    margin-bottom: 80px;
+}
+
+.links img {
+    width: 400px;
+    height: 500px;
+    margin: 0 20px;
+    border-radius: 30px;
+    transition: 0.35s;
+}
+
+.links img:hover {
+    transform: scale(1.05);
+}
+
+@keyframes load {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.section__1 h1,
+.section__1 p {
+    color: #c7c7c7;
+    margin: 5px 0;
+}
+
+.section__1 h1,
+.hello h1 {
+    background: linear-gradient(45deg, rgb(208, 206, 206) 0%, rgb(125, 125, 125) 105%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    font-size: 86px;
+    letter-spacing: 2px;
+}
+
+.section__1 p {
+    font-size: 28px;
+    letter-spacing: 2px;
+}
+
+.section__1 a {
+    position: relative;
+    top: 135px;
+    background: linear-gradient(190deg, rgb(208, 206, 206) 0%, rgb(125, 125, 125) 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    scale: 4;
+    transition: all 0.3s;
+}
+
+.section__conversion {
+    margin: 150px 0px;
+    padding: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 80px;
+    height: min-content;
+    width: 100%;
+}
+
+.section__conversion h1 {
+    box-sizing: border-box;
+    font-size: 48px;
+    color: #fff;
+    position: relative;
+    top: 50px;
+}
+
+.section__conversion p {
+    text-align: center;
+    box-sizing: border-box;
+    font-size: 32px;
+    max-width: 1000px;
+    color: #888888;
+}
+
+.section__2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-shrink: 1;
+    gap: 60px;
+}
+
+.card {
+    background-color: #73737312;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+    height: 735px;
+    width: 580px;
+    border-radius: 35px;
+    justify-content: space-between;
+    border: 1px solid #272727;
+}
+
+.card h1 {
+    color: #fff;
+    font-size: 36px;
+}
+
+.card p {
+    font-size: 22px;
+    color: #888888;
+}
+
+.card__img {
+    display: flex;
+    overflow: hidden;
+    margin-bottom: 20px;
+    border-radius: 35px;
+}
+
+.card img {
+    transition: all 0.45s ease;
+}
+
+.card a {
+    color: #fff;
+    font-size: 24px;
+    position: relative;
+    align-self: flex-start;
+    margin-top: auto;
+    transition: 0.45s;
+}
+
+.card:hover a {
+    color: #5872e9;
+}
+
+.card a::after {
+    content: "➞";
+    margin-left: 5px;
+    position: absolute;
+    top: 1px;
+}
+
+.card:hover img {
+    transform: scale(1.05);
+    filter: brightness(100%);
+}
+
+.card img {
+    height: 344px;
+    filter: brightness(70%);
+}
+
+.card__1 {
+    animation: CardLeft;
+    animation-range: entry 0% entry 120%;
+    animation-timeline: view();
+}
+
+.card__2 {
+    animation: CardRight;
+    animation-range: entry 0% entry 120%;
+    animation-timeline: view();
+}
+
+@keyframes CardLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(-100%);
+        filter: blur(5px);
+    }
+}
+
+@keyframes CardRight {
+    0% {
+        opacity: 0;
+        transform: translateX(100%);
+        filter: blur(5px);
+    }
+}
+
+footer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer p {
+    font-size: 22px;
+    color: #8888881e;
+    margin: 20px 0;
+}
+
+/* КОНТАКТЫ КОНТАКТЫ КОНТАКТЫ КОНТАКТЫ */
+
+.section__1 {
+    background-image: url("img/render1_00000_00000.png");
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}

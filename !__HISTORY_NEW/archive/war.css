@@ -1,0 +1,246 @@
+@import url("../fonts.css");
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    user-select: none;
+}
+
+header {
+    position: fixed;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+    border-bottom: 1px solid #6d6d6d11;
+    z-index: 111;
+    backdrop-filter: blur(0px);
+    transition: all 1s;
+}
+
+header a {
+    color: #fff;
+    font-family: "Futura PT Book";
+    font-size: 24px;
+    margin: 0 15px;
+    letter-spacing: 1.2px;
+    transition: 0.4s;
+}
+
+header a:hover {
+    color: #cacaca;
+}
+
+header nav {
+    padding: 10px;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    background-color: rgb(14, 14, 14) !important;
+    background-image: url("../img/backgroundpage1.1_00000.png");
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: "Futura PT Book";
+    overflow-x: hidden;
+    animation: load 2.5s linear forwards;
+}
+
+@keyframes load {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+main {
+    flex: 1;
+    height: min-content;
+    margin-bottom: 100px;
+}
+
+a {
+    text-decoration: none;
+}
+
+section {
+    width: 100%;
+    height: 100vh;
+}
+
+.section__1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    animation: opacityAnim;
+    animation-timeline: view();
+    animation-range: entry 0% entry 150%;
+}
+
+.section__1 h1,
+.section__1 p {
+    margin: 5px 0;
+}
+
+.section__1 h1 {
+    background: linear-gradient(140deg, rgb(231, 231, 231) 0%, rgb(150, 150, 150) 105%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    font-size: 86px;
+    letter-spacing: 2px;
+}
+
+.section__1 p {
+    color: #c7c7c7;
+    font-size: 28px;
+    letter-spacing: 2px;
+}
+
+.main-block {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    gap: 30px;
+    height: min-content;
+    animation: opacityAnim;
+    animation-range: entry 0% entry 150%;
+    animation-timeline: view();
+}
+
+@keyframes opacityAnim {
+    0% {
+        opacity: 0.1;
+        transform: scale(0.55);
+    }
+}
+
+.main-block div[class^="section"] {
+    position: relative;
+    box-sizing: border-box;
+    border: 1px solid #272727;
+    background-color: #1a1818e1;
+    border-radius: 35px;
+}
+
+.section-2 {
+    outline: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 50px;
+    max-width: 840px;
+    padding: 40px;
+}
+
+.section-2 p {
+    font-size: 22px;
+    color: #888888;
+}
+
+.section-2 h2 {
+    color: #fff;
+    font-size: 36px;
+}
+
+.under-block {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.section-3 {
+    min-width: 600px;
+    font-size: 60pt;
+    display: inline-block;
+    padding: 20px;
+    min-height: 600px;
+    background-image: url("../img/russko-tureckaya-voina-1768-74.jpg");
+    background-size: cover;
+    cursor: pointer;
+    transition: all 0.35s;
+}
+
+.section-4 {
+    height: 100%;
+    background-image: url("../img/Torelli12.jpg");
+    background-size: cover;
+    background-position: center;
+    cursor: pointer;
+    transition: all 0.35s;
+}
+
+.section-3:hover,
+.section-4:hover {
+    filter: brightness(0.7);
+}
+
+.popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.63);
+    opacity: 0;
+    visibility: hidden;
+    transition: all 1s ease;
+    z-index: 112;
+}
+
+.popup__content {
+    width: 1200px;
+    min-height: 800px;
+    height: auto;
+    border-radius: 30px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    color: #fff;
+}
+
+.popup__content img {
+    width: 1200px;
+    height: 800px;
+    border-radius: 30px;
+}
+
+.popup__caption {
+    width: 100%;
+    padding: 10px 15px;
+    font-size: 22px;
+    text-align: center;
+}
+
+.show {
+    opacity: 1;
+    visibility: visible;
+}
+
+/*FOOOOOOOOTER*/
+footer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer p {
+    font-size: 22px;
+    color: #8888881e;
+    margin: 20px 0;
+}

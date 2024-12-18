@@ -1,0 +1,239 @@
+@import url("fonts.css");
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    user-select: none;
+}
+
+a:-webkit-any-link {
+    text-decoration: none;
+}
+
+body {
+    background-color: rgb(14, 14, 14);
+    font-family: "Futura PT Book", serif;
+    overflow-x: hidden;
+    height: 3000px;
+    animation: load 2.5s linear forwards;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+}
+
+header nav {
+    border: #98989852 1px solid;
+    margin-top: 20px;
+    padding: 15px;
+    border-radius: 50px;
+    position: fixed;
+    backdrop-filter: blur(3px);
+    background-color: #4d4d4d6d;
+    z-index: 1000;
+}
+
+header a {
+    color: #fff;
+    font-size: 24px;
+    margin: 0 15px;
+    letter-spacing: 1.2px;
+    transition: 0.4s;
+    text-decoration: none;
+}
+
+header a:hover {
+    color: #cacaca;
+}
+
+header nav {
+    padding: 10px;
+}
+
+@keyframes load {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+section {
+    width: 100%;
+    min-height: 100vh;
+    height: auto;
+}
+
+.section__1 {
+    background-image: url("img/backgroundpage1.1_00000.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    transition: all 0.4s;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.text-fixed {
+    position: fixed;
+    text-align: center;
+}
+
+.section__1 h1,
+.section__1 p {
+    color: #c7c7c7;
+    margin: 5px 0;
+    filter: drop-shadow(0px 3px 2px rgba(0, 0, 0, 1));
+}
+
+.section__1 h1 {
+    background: linear-gradient(90deg, rgb(208, 206, 206) 0%, rgb(125, 125, 125) 105%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    font-size: 86px;
+    letter-spacing: 2px;
+}
+
+.section__1 p {
+    font-size: 28px;
+    letter-spacing: 2px;
+    max-width: 1200px;
+    text-align: center;
+}
+
+.section__1 a {
+    position: relative;
+    top: 135px;
+    background: linear-gradient(190deg, rgb(208, 206, 206) 0%, rgb(125, 125, 125) 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    scale: 4;
+    transition: all 0.3s;
+}
+
+.section__2 {
+    padding: 70px 70px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: all 1.3s;
+    position: relative;
+}
+
+.text__container h1 {
+    font-size: 52px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #fff;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.text__container p {
+    font-size: 27px;
+    color: #b0b0b0;
+    text-indent: 30px;
+    text-align: justify;
+    line-height: 35px;
+    margin-bottom: 30px;
+}
+
+.text__container ul li {
+    font-size: 27px;
+    color: #b0b0b0;
+    margin-left: 30px;
+}
+
+.text__container ul li span {
+    font-weight: 800;
+    color: #fff;
+}
+
+.text__container p:nth-child(1)::first-letter {
+    font-size: 62px;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: bold;
+    line-height: 1;
+}
+
+.text__container {
+    width: 1400px;
+    margin-bottom: 200px;
+}
+
+.text__container img {
+    width: 400px;
+    height: 500px;
+    border-radius: 25px;
+}
+
+.images {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    margin: 50px 0;
+}
+
+figure {
+    max-width: fit-content;
+}
+
+figcaption {
+    color: #fff;
+    text-align: center;
+    font-size: 24px;
+}
+
+#map1 {
+    width: 750px;
+}
+
+#map2 {
+    width: 750px;
+    height: 850px;
+}
+
+.button-container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 55px;
+    font-weight: 800;
+    letter-spacing: 2px;
+    position: relative;
+    height: fit-content;
+    padding: 20px;
+}
+
+
+.button-container::before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 2px;
+    height: 100%;
+    background: #b0b0b0;
+}
+
+.button-container a {
+    color: #b0b0b0;
+    transition: 0.3s;
+}
+
+.button-container a:hover {
+    color: #fff;
+}
