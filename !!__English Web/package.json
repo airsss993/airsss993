@@ -1,0 +1,13 @@
+{
+  "name": "!!__english-web",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "private": true,
+  "dependencies": {
+    "gsap": "^3.12.5"
+  }
+}
