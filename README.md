@@ -1,14 +1,18 @@
-# Hi there 👋
-![Profile view counter on GitHub](https://komarev.com/ghpvc/?username=airsss993)
+<div align="center">
+  <h2>🚀 Backend Developer | Go Enthusiast | Student</h2>
+
+![Profile Views](https://komarev.com/ghpvc/?username=airsss993&style=for-the-badge&color=brightgreen)
+![GitHub followers](https://img.shields.io/github/followers/airsss993?style=for-the-badge&color=blue)
+![GitHub User's stars](https://img.shields.io/github/stars/airsss993?style=for-the-badge&color=yellow)
+</div>
 
 ## About Me
 
 I'm a **second-year student**, specializing in **Backend Development**. Currently diving deep into the world of server-side programming and building robust, scalable applications.
 
-- 🎓 **Education:** College (2nd year)
+- 🎓 **Education:** Tech College (2nd year)
 - 💻 **Specialization:** Backend Development
 - 🚀 **Primary Language:** Go (Golang)
-- 🌱 **Currently Learning:** Advanced backend architectures, microservices, and cloud technologies
 
 ## 🛠️ Tech Stack
 
@@ -29,12 +33,9 @@ I'm a **second-year student**, specializing in **Backend Development**. Currentl
 ![Linux](https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black)
 ![Postman](https://img.shields.io/badge/Postman-FF6C37?style=for-the-badge&logo=postman&logoColor=white)
 
-## 📊 GitHub Stats
 
-<div align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=airsss993&hide_title=false&hide_rank=false&show_icons=true&include_all_commits=true&count_private=true&disable_animations=false&theme=dracula&locale=en&hide_border=false" height="150" alt="stats graph" />
-  <img src="https://github-readme-stats.vercel.app/api/top-langs?username=airsss993&locale=en&hide_title=false&layout=compact&card_width=320&langs_count=6&theme=dracula&hide_border=false" height="150" alt="languages graph" />
-</div>
+
+## 📊 GitHub Stats
 
 <div align="center">
   <img src="https://streak-stats.demolab.com?user=airsss993&locale=en&mode=daily&theme=dracula&hide_border=false&border_radius=5" height="150" alt="streak graph" />
